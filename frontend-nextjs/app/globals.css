@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #020617;
+  /* Slate 950 */
+  --foreground: #f8fafc;
+  /* Slate 50 */
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Premium AG Grid Customization */
+.ag-theme-alpine-dark {
+  --ag-background-color: #0f172a80;
+  /* Transparent Slate 900 */
+  --ag-header-background-color: #1e293b;
+  /* Slate 800 */
+  --ag-header-foreground-color: #94a3b8;
+  /* Slate 400 */
+  --ag-odd-row-background-color: #0f172a40;
+  --ag-row-hover-color: #3b82f620;
+  /* Subtle Blue Glow */
+  --ag-selected-row-background-color: #3b82f640;
+  --ag-border-color: #1e293b;
+  --ag-foreground-color: #e2e8f0;
+  --ag-font-size: 14px;
+  --ag-header-column-separator-display: block;
+  --ag-header-column-separator-color: #334155;
+  --ag-border-radius: 12px;
+}
+
+.ag-header-cell-label {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+}
+
+/* Animations */
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInSlideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}

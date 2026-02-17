@@ -1,0 +1,36 @@
+# ======================
+# Python
+# ======================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# Logs
+*.log
+
+# ======================
+# Data Files
+# ======================
+data/
+*.parquet
+*.xlsb
+*.csv
+
+# ======================
+# Next.js
+# ======================
+frontend-nextjs/.next/
+frontend-nextjs/node_modules/
+.next/
+node_modules/
+build/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
